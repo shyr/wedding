@@ -3,9 +3,10 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "gsap": "^1.18.2",
+    "gsap": "^1.14.0",
     "scrollmagic": "^2.0.5",
-    "components-font-awesome": "^4.5.0"
+    "components-font-awesome": "^4.5.0",
+    "jquery": "^2.2.2"
   },
   "overrides": {
     "bootstrap-sass": {
