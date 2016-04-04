@@ -1,0 +1,1 @@
+"use strict";$(function(){var e=new ScrollMagic.Controller,o=TweenMax.to("#cover",1,{opacity:.8});new ScrollMagic.Scene({duration:"100%"}).setTween(o).addIndicators().addTo(e)});
