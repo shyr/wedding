@@ -55,6 +55,17 @@ $(function () {
 		offset: '-100px'
 	}).setTween(font_dimmer).addTo(controller);
 
+	var gallery_font_brighter = TweenMax.to("#gallery", 1, {
+		color: 'rgba(0, 0, 0, 1)',
+		opacity: 1
+	});
+
+	new ScrollMagic.Scene({
+		triggerElement: '#trigger6',
+		duration: '250px',
+		offset: '-100px'
+	}).setTween(gallery_font_brighter).addTo(controller);
+
 	/* 지도 */
 	var centerPoint = new nhn.api.map.LatLng(37.3624968, 127.1075447);
 	var oPoint = new nhn.api.map.LatLng(37.3597611, 127.1052704);
@@ -102,10 +113,5 @@ $(function () {
 	oMap.addOverlay(oMarker);
 
 	/* 갤러리 */
-	$('.rslides').responsiveSlides({
-		auto: true,
-		speed: 1500,
-		timeout: 1000
-	});
 });
 //# sourceMappingURL=main.js.map
