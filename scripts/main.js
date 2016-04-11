@@ -118,12 +118,13 @@ $(function () {
 
 	/* 갤러리 */
 	$(".rslides").responsiveSlides({
-		auto: false,
-		speed: 2000,
-		timeout: 7000,
+		auto: true,
+		speed: 1000,
+		timeout: 6000,
 		random: true,
 		pager: true,
-		pause: true
+		pause: true,
+		pauseControls: true
 	});
 
 	$(".rslides").parent().find(".rslides_tabs").addClass("pagination");
