@@ -1,6 +1,10 @@
 'use strict';
 
 $(function () {
+	// random main background
+	var images = ['m-1.jpg', 'm-2.jpg', 'm-3.jpg'];
+	$('#bg1').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' });
+
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
@@ -113,5 +117,19 @@ $(function () {
 	oMap.addOverlay(oMarker);
 
 	/* 갤러리 */
+	$(".rslides").responsiveSlides({
+		auto: false,
+		speed: 2000,
+		timeout: 7000,
+		random: true,
+		pager: true,
+		pause: true
+	});
+
+	$(".rslides").parent().find(".rslides_tabs").addClass("pagination");
+	$(".rslides").parent().find(".rslides_tabs").addClass("pagination-sm");
+
+	// Make it to full screen
+	window.scrollTo(0, 1);
 });
 //# sourceMappingURL=main.js.map
