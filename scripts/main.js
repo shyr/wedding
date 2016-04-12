@@ -2,7 +2,7 @@
 
 $(function () {
 	// random main background
-	var images = ['m-1.jpg', 'm-2.jpg', 'm-3.jpg', 'm-3.jpg', 'm-4.jpg'];
+	var images = ['m-1.jpg', 'm-2.jpg', 'm-3.jpg', 'm-3.jpg'];
 	$('#bg1').css({ 'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')' });
 
 	// init controller
